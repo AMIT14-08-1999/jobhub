@@ -15,13 +15,13 @@ const chatSchema=mongoose.Schema({
             ref:"User",
         }
     ],
-    latestMessage:{
-        type:mongoose.Schema.ObjectId,
-        ref:"Message",
-    },
     groupAdmin:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",
+    },
+    latestMessage:{
+        type:mongoose.Schema.ObjectId,
+        ref:"Message",
     }
 },{
     timestamps:true
